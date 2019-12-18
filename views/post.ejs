@@ -1,0 +1,11 @@
+<%- include("partials/header"); -%>
+
+<h1> <%= title; %> </h1>
+<p> <%= content; %> </p>
+
+<div class="button-wrapper ">
+  <a href="/editList" class="btn btn-info"> <i class="far fa-edit " aria-hidden="true"></i>edit </a>
+  <a href="/delete" class="btn btn-info"> <i class="fas ml-2 fa-trash-alt" aria-hidden="true"></i> delete</a>
+</div>
+
+<%- include("partials/footer"); -%>

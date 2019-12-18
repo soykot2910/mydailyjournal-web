@@ -1,0 +1,19 @@
+<%- include("partials/header"); -%>
+
+<h1>Compose</h1>
+
+<form action="/compose" method="post">
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Title</label>
+        <input name="postTitle" type="text" class="form-control postTitle" id="exampleFormControlInput1" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Post</label>
+        <textarea name="postBody" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="">Add Image</label>
+        <input type="file" name="imagePath">
+    </div>
+    <button type="submit" class="btn btn-lg btn-primary" name=" button">Publish</button>
+</form>
